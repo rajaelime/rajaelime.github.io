@@ -192,7 +192,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Updated at: 2022-07-27 17:24:31" itemprop="dateModified" datetime="2022-07-27T17:24:31+09:00">2022-07-27</time>
+      <time title="Updated at: 2022-07-27 17:29:37" itemprop="dateModified" datetime="2022-07-27T17:29:37+09:00">2022-07-27</time>
     </span>
 
   
@@ -210,9 +210,9 @@
 
 <h3 id="GitHub-Pages-배포"><a href="#GitHub-Pages-배포" class="headerlink" title="GitHub Pages 배포"></a>GitHub Pages 배포</h3><ol>
 <li>username.github.io 이름으로 public repo 생성</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a> 설치<br> &#96;&#96;&#96; bash<br> $ npm install hexo-deployer-git –save    </li>
-<li>_config.yml 파일 수정<br> &#96;&#96;&#96; bash<br> deploy:<br>   type:git<br>   repo: <repository url> # <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a><br>   branch: [branch]<br>   message: [message]<br>   token: [token]</li>
-<li>배포<br> &#96;&#96;&#96; bash<br> $ hexo clean &amp;&amp; hexo deploy</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a> 설치 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save    </span><br></pre></td></tr></table></figure></li>
+<li>_config.yml 파일 수정 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:git</span><br><span class="line">  repo: &lt;repository url&gt; <span class="comment"># https://username.github.io</span></span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br><span class="line">  token: [token]</span><br></pre></td></tr></table></figure></li>
+<li>배포 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="참고자료"><a href="#참고자료" class="headerlink" title="참고자료"></a>참고자료</h4><ul>
 <li><a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages 설치 가이드</a></li>

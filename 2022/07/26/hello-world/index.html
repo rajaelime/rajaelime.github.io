@@ -21,15 +21,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"rajaelime.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Hexo를 활용하여 별도의 백엔드 서버가 필요하지 않은 정적 컨텐츠 형태의 블로그 구성정적 컨텐츠 배포용 서비스로는 GitHub Pages 활용 Hexo 설치1$ npm install -g hexo-cli  GitHub Pages 배포 username.github.io 이름으로 public repo 생성 hexo-deployer-git 설치 &#96;&amp;#9">
+    <meta name="description" content="Hexo를 활용하여 별도의 백엔드 서버가 필요하지 않은 정적 컨텐츠 형태의 블로그 구성정적 컨텐츠 배포용 서비스로는 GitHub Pages 활용 Hexo 설치1$ npm install -g hexo-cli  GitHub Pages 배포 username.github.io 이름으로 public repo 생성 hexo-deployer-git 설치 1$ npm i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo &amp; GitHub page 를 활용한 블로그 운영">
 <meta property="og:url" content="https://rajaelime.github.io/2022/07/26/hello-world/index.html">
 <meta property="og:site_name" content="Jaeyoon">
-<meta property="og:description" content="Hexo를 활용하여 별도의 백엔드 서버가 필요하지 않은 정적 컨텐츠 형태의 블로그 구성정적 컨텐츠 배포용 서비스로는 GitHub Pages 활용 Hexo 설치1$ npm install -g hexo-cli  GitHub Pages 배포 username.github.io 이름으로 public repo 생성 hexo-deployer-git 설치 &#96;&amp;#9">
+<meta property="og:description" content="Hexo를 활용하여 별도의 백엔드 서버가 필요하지 않은 정적 컨텐츠 형태의 블로그 구성정적 컨텐츠 배포용 서비스로는 GitHub Pages 활용 Hexo 설치1$ npm install -g hexo-cli  GitHub Pages 배포 username.github.io 이름으로 public repo 생성 hexo-deployer-git 설치 1$ npm i">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2022-07-26T09:15:31.311Z">
-<meta property="article:modified_time" content="2022-07-27T08:24:31.569Z">
+<meta property="article:modified_time" content="2022-07-27T08:29:37.941Z">
 <meta property="article:author" content="Jaeyoon Kim">
 <meta name="twitter:card" content="summary">
 
@@ -198,7 +198,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Updated at: 2022-07-27 17:24:31" itemprop="dateModified" datetime="2022-07-27T17:24:31+09:00">2022-07-27</time>
+      <time title="Updated at: 2022-07-27 17:29:37" itemprop="dateModified" datetime="2022-07-27T17:29:37+09:00">2022-07-27</time>
     </span>
 
   
@@ -216,9 +216,9 @@
 
 <h3 id="GitHub-Pages-배포"><a href="#GitHub-Pages-배포" class="headerlink" title="GitHub Pages 배포"></a>GitHub Pages 배포</h3><ol>
 <li>username.github.io 이름으로 public repo 생성</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a> 설치<br> &#96;&#96;&#96; bash<br> $ npm install hexo-deployer-git –save    </li>
-<li>_config.yml 파일 수정<br> &#96;&#96;&#96; bash<br> deploy:<br>   type:git<br>   repo: <repository url> # <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a><br>   branch: [branch]<br>   message: [message]<br>   token: [token]</li>
-<li>배포<br> &#96;&#96;&#96; bash<br> $ hexo clean &amp;&amp; hexo deploy</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a> 설치 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save    </span><br></pre></td></tr></table></figure></li>
+<li>_config.yml 파일 수정 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:git</span><br><span class="line">  repo: &lt;repository url&gt; <span class="comment"># https://username.github.io</span></span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br><span class="line">  token: [token]</span><br></pre></td></tr></table></figure></li>
+<li>배포 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="참고자료"><a href="#참고자료" class="headerlink" title="참고자료"></a>참고자료</h4><ul>
 <li><a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages 설치 가이드</a></li>
